@@ -1,0 +1,26 @@
+:root{
+    --verde:#00A149;
+    --blanco: #fff;
+    --rojo:#881014;
+    --oscuro: #000;
+    --titulos: 'Arima', cursive;
+    --parrafos: 'Mulish', sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    margin:0 auto;
+    width: 95%;
+}
+/*Encabezado*/
+.contenido-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
