@@ -1,5 +1,6 @@
 :root{
     --verde:#00A149;
+    --azul:skyblue;
     --blanco: #fff;
     --rojo:#881014;
     --oscuro: #000;
@@ -8,6 +9,10 @@
 }
 html{
     box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
 }
 *,*::after,*::before{
     box-sizing: inherit;
@@ -18,9 +23,79 @@ html{
     margin:0 auto;
     width: 95%;
 }
+h1,h2{
+    font-family: var(--titulos);
+}
+h3,p,a{
+    font-family: var(--parrafos);
+}
+.verde{
+    color: var(--verde);
+}
+.rojo{
+    color: var(--rojo);
+}
+.ocultar{
+    display: none;
+}
+.btn-cerrar{
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--blanco);
+    position: absolute;
+    top: 0;
+    right: 50px;
+    user-select: none;
+}
+.btn-cerrar:hover{
+    cursor: pointer;
+}
 /*Encabezado*/
+.contenedor-navegacion{
+    background-color: var(--oscuro);
+}
 .contenido-navegacion{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+.logo h2,.navegacion a{
+    color: var(--blanco);
+}
+.logo h2{
+    font-size: 3rem;
+}
+.navegacion{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 30rem;
+    padding: 3rem 4rem;
+    background-color: var(--oscuro);
+}
+.navegacion a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1.2rem;
+    display: block;
+    transition: color .3s ease-in-out;
+}
+.navegacion a:first-of-type{
+    margin-top: 5rem;
+}
+.navegacion a:nth-child(even):hover{
+    color: var(--rojo);
+}
+.navegacion a:nth-child(odd):hover{
+    color: var(--azul);
+}
+.hamburguesa span{
+    background-color: var(--blanco);
+    display: block;
+    width: 5rem;
+    height: .5rem;
+    margin-bottom: .5rem;
+}
+
+
